@@ -1,11 +1,11 @@
-package com.example.atestkotlin
+package com.example.viewPager
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.example.atestkotlin.R
 import com.example.atestkotlin.databinding.ActivityMainBinding
-import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         myAdapter = MyViewPagerAdapter(this)
         binding.viewpager.adapter = myAdapter
         binding.viewpager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-        binding.viewpager.offscreenPageLimit = 3
+        binding.viewpager.offscreenPageLimit = 3 // Count My Fragments
 
         val mediator = TabLayoutMediator(
             binding.tablayout,
@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             when (position) {
                 0 -> {
                     tab.text = "Image"
-                    tab.icon= ContextCompat.getDrawable(this,R.drawable.ic_image)
+                    tab.icon= ContextCompat.getDrawable(this, R.drawable.ic_image)
                 }
 
                 1 -> {

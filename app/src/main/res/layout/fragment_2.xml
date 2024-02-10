@@ -7,12 +7,11 @@
 
     <TextView
         android:id="@+id/txt_fragment"
+        android:textColor="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Fragment 1"
-        android:textColor="@color/colorAccent"
         android:textSize="32sp"
         android:textStyle="bold" />
 

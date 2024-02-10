@@ -1,4 +1,4 @@
-package com.example.atestkotlin
+package com.example.viewPager
 
 import org.junit.Test
 
